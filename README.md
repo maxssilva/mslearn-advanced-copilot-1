@@ -5,7 +5,41 @@ Discover new ways to leverage advanced GitHub Copilot techniques within a Python
 Gain more practical experience by using this repository that contains a Python Web Application that hosts a Travel Weather API.
 
 
-## Requirements
+## How to Run This Project
+
+To get started with this project, follow the steps below:
+
+1. **Clone the repository**:
+    ```sh
+    git clone https://github.com/MicrosoftDocs/mslearn-advanced-copilot.git
+    cd mslearn-advanced-copilot
+    ```
+
+2. **Set up a virtual environment**:
+    ```sh
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
+
+3. **Install the dependencies**:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+4. **Run the application**:
+    ```sh
+    uvicorn main:app --reload
+    ```
+
+5. **Access the API documentation**:
+    Open your browser and go to `http://127.0.0.1:8000/docs` to see the interactive API documentation.
+
+6. **Run the tests**:
+    ```sh
+    pytest
+    ```
+
+By following these steps, you will have the project up and running on your local machine. If you encounter any issues, please refer to the documentation or seek help from the community.
 
 1. Enable your [GitHub Copilot service](https://github.com/github-copilot/signup)
 1. Open [this repository with Codespaces](https://codespaces.new/MicrosoftDocs/mslearn-copilot-codespaces-python)
