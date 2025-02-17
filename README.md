@@ -51,6 +51,34 @@ It should give you another solution. Keep trying until you achieve the desired r
 ### 🐍 Step 3: Use an agent to write the project
 During this step we will be using an agent (workspace) to write the project documentation on how to run this project. In the GitHub Copilot Chat, we will try the following prompt:
 
+## Como Executar o Projeto
+
+### Pré-requisitos
+
+Certifique-se de ter o Docker e o Docker Compose instalados em sua máquina.
+
+### Passos para Configuração e Execução
+
+1. Clone o repositório:
+    ```sh
+    git clone https://github.com/seu-usuario/seu-repositorio.git
+    cd seu-repositorio
+    ```
+
+2. Construa e inicie o contêiner Docker:
+    ```sh
+    docker-compose up --build
+    ```
+
+3. Acesse a aplicação:
+    Abra seu navegador e vá para `http://localhost:8000` para acessar a documentação da API.
+
+### Executando Testes
+
+Para executar os testes, use o seguinte comando:
+```sh
+docker-compose run --rm app pytest
+
 `> @workspace help me to use an agent to write the project documentation on how to run it .`
 
 Finally, verify the new endpoint is working by trying it out by going to the `/docs` endpoint and confirming that the endpoint shows up.
